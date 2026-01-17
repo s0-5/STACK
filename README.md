@@ -30,6 +30,19 @@ STACK is built with a **scalable, adaptive architecture** that adjusts to the ca
 - **Real-Time Monitoring**: Continuous tracking of both client and server metrics
 - **Professional Reporting**: Comprehensive PDF reports with detailed analytics
 - **Safety-First Approach**: Built-in protections to prevent system overload
+- **IPv6 Support**: Full IPv6 target input and handling alongside IPv4
+
+---
+
+## ✅ Feature Summary (from implementation)
+
+- **Authentication Gate**: Access token login with required test user name
+- **Audit & Compliance Log**: Structured events for startup, tests, and kill switch
+- **Config Governance**: `config.json` controls safety limits and load profile defaults
+- **Authorization Allow-List**: Optional target allow-list with block on mismatch
+- **UI Mode Themes**: Distinct themes for Professional and THROUGHPUT MAX modes
+- **Safety Confirmations**: High-rate and high-thread warnings before execution
+- **HTTP Success Policy**: Choose 2xx–3xx or any response as success
 
 ---
 
@@ -68,6 +81,29 @@ STACK operates in three distinct performance modes, each designed for specific r
 - **Use Case**: High-intensity research, capacity planning, stress testing
 - **System Requirements**: Professional-grade hardware (see hardware requirements below)
 - **Activation**: Requires Super Test Mode activation and hardware confirmation
+
+---
+
+## 🧰 Request Customization Modes
+
+STACK includes advanced request customization for professional testing workflows:
+
+### 🧪 Professional Mode (Raw Custom Request)
+
+- **Raw Request Editor**: Paste or craft a full HTTP request
+- **Full Control**: Headers, body, and method are fully configurable
+- **Best For**: Advanced testing with non-standard or crafted requests
+
+### 🧱 Semi-Pro Mode (Custom Builder)
+
+- **Guided Builder**: Build requests using structured fields
+- **Method & Path Validation**: Prevents malformed requests
+- **Best For**: Users with limited experience who need guided customization
+
+### 🔧 Send Protocol & Method Controls
+
+- **Send Protocol**: Select http/https (for custom request modes)
+- **Request Method**: GET, POST, HEAD, PUT, DELETE
 
 #### Hardware Requirements for THROUGHPUT MAX Mode
 
@@ -109,6 +145,7 @@ STACK generates **comprehensive professional reports** in PDF format, including:
 - **Client System Resources**: CPU, RAM, and GPU usage statistics (average and peak)
 - **Server Impact Indicators**: Load assessment and response time analysis
 - **Visual Charts**: Timeline graphs showing server status over time
+- **Legal Disclaimer Page**: Built-in compliance page appended to report
 
 ### Report Features
 
@@ -116,6 +153,8 @@ STACK generates **comprehensive professional reports** in PDF format, including:
 - **Session Integrity**: Unique hash identifiers for each test session
 - **Compliance Documentation**: Legal disclaimers and authorization tracking
 - **Export Capabilities**: PDF export with organized file naming
+- **Log Export**: Text logs for audit and post-analysis
+- **User Capacity Report**: Estimates user load thresholds based on measured RPS
 
 ---
 
@@ -145,6 +184,13 @@ STACK generates **comprehensive professional reports** in PDF format, including:
 - **Auto-Stop Protection**: Automatic shutdown when CPU or RAM thresholds are exceeded (Safe Mode)
 - **Resource Monitoring**: Real-time tracking of client system resources
 
+### No Liability Mode (Expert Use)
+
+- **Explicit Disclaimer**: Requires typed confirmation
+- **Protections Disabled**: Safety auto-stop is fully disabled
+- **Behavior**: Disables client health guards even when the system reaches critical states
+- **Warning**: Strongly discouraged unless absolutely necessary
+
 ---
 
 ## 🔍 Port Scanning & Target Discovery
@@ -153,13 +199,19 @@ STACK generates **comprehensive professional reports** in PDF format, including:
 
 - **Basic (Fast)**: Quick port discovery for common services
 - **Medium (Balanced)**: Comprehensive port scanning with balanced speed
-- **Deep (Detailed)**: Thorough port enumeration for complete discovery
+- **Deep (Detailed)**: Full scan across all ports up to 65,000
+- **Special Scan (Custom Range)**: Scan custom start/end port ranges
 
 ### Supported Input Types
 
-- IP Addresses (IPv4)
+- IP Addresses (IPv4 / IPv6)
 - Domain names and URLs
 - Automatic protocol detection (HTTP/HTTPS)
+
+### Custom Port Controls
+
+- **Manual Add**: Add and validate a custom port on demand
+- **Protocol Tagging**: Assign protocol per custom port (http/https/tcp/ssh/ftp)
 
 ---
 
@@ -171,7 +223,9 @@ STACK generates **comprehensive professional reports** in PDF format, including:
 - **Rate Tracking**: Current requests per second
 - **Time Metrics**: Elapsed test duration
 - **Server Status**: Real-time assessment of target server condition
-- **Resource Usage**: CPU, RAM, and GPU utilization tracking
+- **Resource Usage**: CPU, RAM, GPU, and network utilization tracking
+- **Server Load**: Live server load estimation and response time tracking
+- **Network Speed Indicator**: Live Mbps meter with dynamic bar visualization
 
 ### Server Response Analysis
 
@@ -277,15 +331,21 @@ The developer assumes **no responsibility** for any misuse, unauthorized access,
 
 ## 🧾 Project Status
 
-**Version**: v5.3.0  
+**Version**: v5.5.5  
 **Status**: Private Research Project  
 **Repository Type**: Documentation-only
 
 ---
 
+## 🚧 Under Development
+
+- Ongoing improvements and feature expansion are actively in progress.
+
+---
+
 ## 📝 Version Information
 
-**Current Version**: v5.3.0  
+**Current Version**: v5.5.5  
 **Developer**: Mr.Essam GitHub(s0-5)  
 **Copyright**: © 2026
 
